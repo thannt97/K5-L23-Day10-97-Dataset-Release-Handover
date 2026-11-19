@@ -1,0 +1,479 @@
+{
+  "candidates": [
+    {
+      "image": "img_0017",
+      "type": "class_or_category_swap",
+      "detail": "detection=remote; panoptic=cell phone; bbox_iou=0.86"
+    },
+    {
+      "image": "img_0020",
+      "type": "bbox_drift",
+      "detail": "class=bird; best_same_class_iou=0.11"
+    },
+    {
+      "image": "img_0026",
+      "type": "instance_merge",
+      "detail": "panoptic=motorcycle; separate_box_coverage=1.97"
+    },
+    {
+      "image": "img_0028",
+      "type": "instance_merge",
+      "detail": "panoptic=boat; separate_box_coverage=1.53"
+    },
+    {
+      "image": "img_0033",
+      "type": "instance_merge",
+      "detail": "panoptic=bottle; separate_box_coverage=1.44"
+    },
+    {
+      "image": "img_0036",
+      "type": "instance_merge",
+      "detail": "panoptic=sink; separate_box_coverage=1.66"
+    },
+    {
+      "image": "img_0040",
+      "type": "instance_merge",
+      "detail": "panoptic=sheep; separate_box_coverage=1.37"
+    },
+    {
+      "image": "img_0040",
+      "type": "instance_merge",
+      "detail": "panoptic=sheep; separate_box_coverage=1.72"
+    },
+    {
+      "image": "img_0045",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=2.00"
+    },
+    {
+      "image": "img_0046",
+      "type": "class_or_category_swap",
+      "detail": "detection=truck; panoptic=car; bbox_iou=0.93"
+    },
+    {
+      "image": "img_0049",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=2.00"
+    },
+    {
+      "image": "img_0050",
+      "type": "bbox_drift",
+      "detail": "class=traffic light; best_same_class_iou=0.42"
+    },
+    {
+      "image": "img_0050",
+      "type": "instance_merge",
+      "detail": "panoptic=car; separate_box_coverage=1.40"
+    },
+    {
+      "image": "img_0050",
+      "type": "instance_merge",
+      "detail": "panoptic=car; separate_box_coverage=1.43"
+    },
+    {
+      "image": "img_0051",
+      "type": "instance_merge",
+      "detail": "panoptic=chair; separate_box_coverage=1.11"
+    },
+    {
+      "image": "img_0053",
+      "type": "instance_merge",
+      "detail": "panoptic=banana; separate_box_coverage=1.46"
+    },
+    {
+      "image": "img_0054",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=1.99"
+    },
+    {
+      "image": "img_0054",
+      "type": "instance_merge",
+      "detail": "panoptic=chair; separate_box_coverage=1.59"
+    },
+    {
+      "image": "img_0055",
+      "type": "missing_box",
+      "detail": "panoptic=person; area=2718"
+    },
+    {
+      "image": "img_0055",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=2.00"
+    },
+    {
+      "image": "img_0060",
+      "type": "instance_merge",
+      "detail": "panoptic=sheep; separate_box_coverage=0.97"
+    },
+    {
+      "image": "img_0060",
+      "type": "instance_merge",
+      "detail": "panoptic=sheep; separate_box_coverage=1.52"
+    },
+    {
+      "image": "img_0060",
+      "type": "instance_merge",
+      "detail": "panoptic=sheep; separate_box_coverage=1.35"
+    },
+    {
+      "image": "img_0062",
+      "type": "bbox_drift",
+      "detail": "class=skis; best_same_class_iou=0.43"
+    },
+    {
+      "image": "img_0065",
+      "type": "class_or_category_swap",
+      "detail": "detection=cup; panoptic=vase; bbox_iou=0.83"
+    },
+    {
+      "image": "img_0065",
+      "type": "class_or_category_swap",
+      "detail": "detection=cup; panoptic=vase; bbox_iou=0.87"
+    },
+    {
+      "image": "img_0066",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=1.49"
+    },
+    {
+      "image": "img_0069",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=1.11"
+    },
+    {
+      "image": "img_0069",
+      "type": "instance_merge",
+      "detail": "panoptic=chair; separate_box_coverage=1.79"
+    },
+    {
+      "image": "img_0069",
+      "type": "instance_merge",
+      "detail": "panoptic=chair; separate_box_coverage=1.44"
+    },
+    {
+      "image": "img_0070",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=2.00"
+    },
+    {
+      "image": "img_0071",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=1.47"
+    },
+    {
+      "image": "img_0075",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=1.76"
+    },
+    {
+      "image": "img_0075",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=1.72"
+    },
+    {
+      "image": "img_0080",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=1.37"
+    },
+    {
+      "image": "img_0080",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=2.00"
+    },
+    {
+      "image": "img_0080",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=1.98"
+    },
+    {
+      "image": "img_0080",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=1.78"
+    },
+    {
+      "image": "img_0081",
+      "type": "class_or_category_swap",
+      "detail": "detection=bear; panoptic=tennis racket; bbox_iou=0.99"
+    },
+    {
+      "image": "img_0081",
+      "type": "missing_box",
+      "detail": "panoptic=tennis racket; area=11119"
+    },
+    {
+      "image": "img_0088",
+      "type": "missing_box",
+      "detail": "panoptic=chair; area=3609"
+    },
+    {
+      "image": "img_0093",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=2.00"
+    },
+    {
+      "image": "img_0093",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=1.56"
+    },
+    {
+      "image": "img_0101",
+      "type": "instance_merge",
+      "detail": "panoptic=zebra; separate_box_coverage=1.40"
+    },
+    {
+      "image": "img_0105",
+      "type": "bbox_drift",
+      "detail": "class=cat; best_same_class_iou=0.15"
+    },
+    {
+      "image": "img_0105",
+      "type": "missing_box",
+      "detail": "panoptic=cat; area=9658"
+    },
+    {
+      "image": "img_0110",
+      "type": "instance_merge",
+      "detail": "panoptic=bowl; separate_box_coverage=2.00"
+    },
+    {
+      "image": "img_0111",
+      "type": "instance_merge",
+      "detail": "panoptic=boat; separate_box_coverage=1.79"
+    },
+    {
+      "image": "img_0116",
+      "type": "class_or_category_swap",
+      "detail": "detection=cell phone; panoptic=remote; bbox_iou=0.98"
+    },
+    {
+      "image": "img_0120",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=2.00"
+    },
+    {
+      "image": "img_0129",
+      "type": "instance_merge",
+      "detail": "panoptic=toilet; separate_box_coverage=1.51"
+    },
+    {
+      "image": "img_0129",
+      "type": "instance_merge",
+      "detail": "panoptic=toilet; separate_box_coverage=1.68"
+    },
+    {
+      "image": "img_0129",
+      "type": "instance_merge",
+      "detail": "panoptic=toilet; separate_box_coverage=1.62"
+    },
+    {
+      "image": "img_0129",
+      "type": "instance_merge",
+      "detail": "panoptic=toilet; separate_box_coverage=1.30"
+    },
+    {
+      "image": "img_0129",
+      "type": "instance_merge",
+      "detail": "panoptic=toilet; separate_box_coverage=1.40"
+    },
+    {
+      "image": "img_0129",
+      "type": "instance_merge",
+      "detail": "panoptic=toilet; separate_box_coverage=1.43"
+    },
+    {
+      "image": "img_0135",
+      "type": "bbox_drift",
+      "detail": "class=bird; best_same_class_iou=0.43"
+    },
+    {
+      "image": "img_0142",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=1.81"
+    },
+    {
+      "image": "img_0150",
+      "type": "instance_merge",
+      "detail": "panoptic=banana; separate_box_coverage=1.52"
+    },
+    {
+      "image": "img_0156",
+      "type": "class_or_category_swap",
+      "detail": "detection=sink; panoptic=boat; bbox_iou=1.00"
+    },
+    {
+      "image": "img_0156",
+      "type": "missing_box",
+      "detail": "panoptic=boat; area=32475"
+    },
+    {
+      "image": "img_0163",
+      "type": "missing_box",
+      "detail": "panoptic=person; area=10575"
+    },
+    {
+      "image": "img_0173",
+      "type": "class_or_category_swap",
+      "detail": "detection=chair; panoptic=couch; bbox_iou=0.88"
+    },
+    {
+      "image": "img_0186",
+      "type": "bbox_drift",
+      "detail": "class=person; best_same_class_iou=0.18"
+    },
+    {
+      "image": "img_0191",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=1.40"
+    },
+    {
+      "image": "img_0193",
+      "type": "class_or_category_swap",
+      "detail": "detection=cow; panoptic=horse; bbox_iou=0.99"
+    },
+    {
+      "image": "img_0193",
+      "type": "instance_merge",
+      "detail": "panoptic=cow; separate_box_coverage=1.42"
+    },
+    {
+      "image": "img_0193",
+      "type": "missing_box",
+      "detail": "panoptic=horse; area=7624"
+    },
+    {
+      "image": "img_0195",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=1.68"
+    },
+    {
+      "image": "img_0195",
+      "type": "instance_merge",
+      "detail": "panoptic=chair; separate_box_coverage=1.55"
+    },
+    {
+      "image": "img_0196",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=1.65"
+    },
+    {
+      "image": "img_0196",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=2.00"
+    },
+    {
+      "image": "img_0197",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=1.47"
+    },
+    {
+      "image": "img_0199",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=1.44"
+    },
+    {
+      "image": "img_0200",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=1.72"
+    },
+    {
+      "image": "img_0215",
+      "type": "instance_merge",
+      "detail": "panoptic=bed; separate_box_coverage=2.00"
+    },
+    {
+      "image": "img_0218",
+      "type": "instance_merge",
+      "detail": "panoptic=bench; separate_box_coverage=1.82"
+    },
+    {
+      "image": "img_0220",
+      "type": "missing_box",
+      "detail": "panoptic=giraffe; area=30978"
+    },
+    {
+      "image": "img_0221",
+      "type": "bbox_drift",
+      "detail": "class=person; best_same_class_iou=0.42"
+    },
+    {
+      "image": "img_0225",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=1.36"
+    },
+    {
+      "image": "img_0225",
+      "type": "instance_merge",
+      "detail": "panoptic=banana; separate_box_coverage=1.93"
+    },
+    {
+      "image": "img_0228",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=1.57"
+    },
+    {
+      "image": "img_0228",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=1.47"
+    },
+    {
+      "image": "img_0229",
+      "type": "class_or_category_swap",
+      "detail": "detection=wine glass; panoptic=cup; bbox_iou=0.90"
+    },
+    {
+      "image": "img_0229",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=1.61"
+    },
+    {
+      "image": "img_0231",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=2.00"
+    },
+    {
+      "image": "img_0233",
+      "type": "instance_merge",
+      "detail": "panoptic=motorcycle; separate_box_coverage=1.42"
+    },
+    {
+      "image": "img_0233",
+      "type": "instance_merge",
+      "detail": "panoptic=motorcycle; separate_box_coverage=1.39"
+    },
+    {
+      "image": "img_0238",
+      "type": "class_or_category_swap",
+      "detail": "detection=bus; panoptic=car; bbox_iou=0.98"
+    },
+    {
+      "image": "img_0243",
+      "type": "class_or_category_swap",
+      "detail": "detection=chair; panoptic=bench; bbox_iou=0.87"
+    },
+    {
+      "image": "img_0246",
+      "type": "class_or_category_swap",
+      "detail": "detection=handbag; panoptic=backpack; bbox_iou=0.79"
+    },
+    {
+      "image": "img_0247",
+      "type": "class_or_category_swap",
+      "detail": "detection=cup; panoptic=bowl; bbox_iou=0.96"
+    },
+    {
+      "image": "img_0247",
+      "type": "class_or_category_swap",
+      "detail": "detection=bowl; panoptic=cup; bbox_iou=0.80"
+    },
+    {
+      "image": "img_0248",
+      "type": "instance_merge",
+      "detail": "panoptic=person; separate_box_coverage=2.00"
+    },
+    {
+      "image": "img_0249",
+      "type": "instance_merge",
+      "detail": "panoptic=bowl; separate_box_coverage=1.49"
+    }
+  ]
+}
