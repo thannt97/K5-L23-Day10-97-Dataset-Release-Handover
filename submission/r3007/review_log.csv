@@ -1,0 +1,5 @@
+image,type,verdict,note
+000000006723,category_swap,rejected,"Xe tải và xe buýt ở xa, bị che khuất; ảnh không đủ rõ để xác nhận nhầm nhãn."
+000000009483,category_swap,confirmed,"Màn hình máy tính trên bàn; detection=laptop nhưng panoptic=tv, nhãn không nhất quán."
+000000019742,category_swap,confirmed,"Vật thể là bình hoa trang trí, không phải gậy bóng chày như nhãn panoptic."
+000000023781,category_swap,confirmed,"Ảnh có cà rốt và rau củ, không phải xe máy như nhãn panoptic."
