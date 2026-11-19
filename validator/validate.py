@@ -2,9 +2,11 @@
 """Validate a Day 10 delivery without reading any data outside ``delivery``.
 
 Usage:
-    python validator/validate.py DELIVERY --out errors.json
+    python validator/validate.py DELIVERY --out errors.json [--candidates candidates.json]
 
-The errors output contains only rule-detectable faults.
+The errors output contains only rule-detectable faults.  Cross-source signals are
+written separately as candidates because a human must inspect the image before a
+semantic fault is reported.
 """
 
 from __future__ import annotations
@@ -155,6 +157,7 @@ def rule_errors(delivery: Path) -> tuple[set[tuple[str, str]], list[dict]]:
                         if any(segment["id"] in stats and segment.get("area", 0) > stats[segment["id"]]["area"]
                                for segment in annotation["segments_info"]):
                             add(errors, "thing_overlap", stem)
+                    candidates.extend(semantic_candidates(stem, boxes, annotation, categories, classes, width, height, stats))
                 except (OSError, ValueError):
                     pass
 
@@ -179,15 +182,77 @@ def duplicate_box(boxes: list[tuple[int, float, float, float, float]], image: di
     return False
 
 
+def semantic_candidates(stem: str, boxes: list[tuple[int, float, float, float, float]], annotation: dict,
+                        categories: dict[int, dict], classes: dict[int, str], width: int, height: int,
+                        stats: dict[int, dict]) -> list[dict]:
+    """Produce conservative signals, never final semantic findings."""
+    detections = [(box, classes.get(box[0]), xyxy(box, width, height)) for box in boxes if box[0] in classes]
+    segments = []
+    for segment in annotation["segments_info"]:
+        category = categories.get(segment["category_id"])
+        stat = stats.get(segment["id"])
+        if not category or not category.get("isthing") or segment.get("iscrowd") or not stat:
+            continue
+        bbox = (stat["left"], stat["top"], stat["right"] + 1, stat["bottom"] + 1)
+        segments.append((segment, category["name"], bbox, stat))
+    out = []
+    emitted: set[tuple[str, str]] = set()
+
+    def emit(kind: str, detail: str) -> None:
+        key = (kind, detail)
+        if key not in emitted:
+            emitted.add(key)
+            out.append({"image": stem, "type": kind, "detail": detail})
+
+    for box, name, rect in detections:
+        overlaps = [(iou(rect, seg_rect), seg_name, seg_rect) for _, seg_name, seg_rect, _ in segments]
+        if not overlaps:
+            continue
+        score, other_name, _ = max(overlaps)
+        if score >= 0.35 and name != other_name:
+            emit("class_or_category_swap", f"detection={name}; panoptic={other_name}; bbox_iou={score:.2f}")
+        same = [score for score, seg_name, _ in overlaps if seg_name == name]
+        if same and 0.05 <= max(same) < 0.45:
+            emit("bbox_drift", f"class={name}; best_same_class_iou={max(same):.2f}")
+
+    for _, seg_name, seg_rect, stat in segments:
+        if stat["area"] < 1024:
+            continue
+        same = [(rect, iou(rect, seg_rect)) for _, name, rect in detections if name == seg_name]
+        if not same or max(score for _, score in same) < 0.20:
+            emit("missing_box", f"panoptic={seg_name}; area={stat['area']}")
+        # A segment substantially covered by two same-class detection boxes is a
+        # stronger merge signal than bbox overlap alone.
+        nearby = [(rect, iou(rect, seg_rect)) for _, name, rect in detections if name == seg_name and iou(rect, seg_rect) >= 0.01]
+        if len(nearby) < 2:
+            continue
+        coverages = []
+        for rect, _ in nearby:
+            hits = sum(rect[0] <= pos % width < rect[2] and rect[1] <= pos // width < rect[3] for pos in stat["pixels"])
+            coverage = hits / stat["area"]
+            if coverage >= 0.35:
+                coverages.append((rect, coverage))
+        pairs = [(a, b) for index, a in enumerate(coverages) for b in coverages[index + 1:]
+                 if iou(a[0], b[0]) <= 0.20 and a[1] + b[1] >= 0.75]
+        if pairs:
+            _, first, second = max(((a[1] + b[1], a[1], b[1]) for a, b in pairs), key=lambda row: row[0])
+            emit("instance_merge", f"panoptic={seg_name}; separate_box_coverage={first + second:.2f}")
+    return out
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Validate a Day 10 delivery")
     parser.add_argument("delivery", type=Path)
     parser.add_argument("--out", required=True, type=Path)
+    parser.add_argument("--candidates", type=Path)
     args = parser.parse_args()
-    errors, _ = rule_errors(args.delivery)
+    errors, candidates = rule_errors(args.delivery)
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps({"errors": [{"type": kind, "target": target} for kind, target in sorted(errors)]}, indent=2) + "\n", encoding="utf-8")
-    print(f"{len(errors)} rule errors")
+    if args.candidates:
+        args.candidates.parent.mkdir(parents=True, exist_ok=True)
+        args.candidates.write_text(json.dumps({"candidates": candidates}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"{len(errors)} rule errors" + (f"; {len(candidates)} review candidates" if args.candidates else ""))
     return 0
 
 
