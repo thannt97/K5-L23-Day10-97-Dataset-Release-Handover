@@ -1,0 +1,5 @@
+image,type,annotator,reviewer,action
+000000004134,bbox_out_of_bounds,A02,Q01,reannotate_detection
+000000005529,duplicate_box,A05,Q03,reannotate_detection
+000000013546,invalid_class,A04,Q02,reannotate_detection
+000000013923,duplicate_box,A04,Q02,reannotate_detection
