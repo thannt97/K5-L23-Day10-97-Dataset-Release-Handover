@@ -15,7 +15,7 @@ QC v1 là 14/250 = 5.6%, vượt ngưỡng 2%, nên quyết định HOLD. Lineag
 SHA-256 chứng minh bytes của file trong manifest không bị đổi kể từ lúc lập manifest; nhờ đó kiểm được tính toàn vẹn và truy vết. Hash không chứng minh đối tượng trong ảnh được gán đúng lớp, box đúng vị trí hay quyết định review là đúng.
 
 ## 5. Truy vết
-<<Tiêu chí tầng a/b, vì sao lấy guideline theo job.>>
+`tier_a` gồm ảnh thuộc scene team AI nêu, có box detection của lớp đổi quy tắc và job dùng guideline cũ v1.2. `tier_b` là các ảnh còn lại cùng điều kiện. Guideline được lấy từ `jobs.csv`, không lấy `metadata.json` theo ảnh vì trường metadata có thể chính là lỗi `guideline_mismatch`.
 
 ## 6. Bug hoặc điểm chưa rõ trong lab (nếu có)
 <<>>
