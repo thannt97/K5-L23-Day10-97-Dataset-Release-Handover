@@ -1,4 +1,4 @@
-# Báo cáo nhóm <<XX>>
+# Báo cáo nhóm 1204
 
 ## 1. Số liệu luyện tập
 - F1 theo seed (rule / cross_check / overall): `r3007: ≈1.0 / ≈0.3 / ≈0.7`; `r3008: ≈1.0 / — / ≈0.7`.
