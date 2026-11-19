@@ -1,11 +1,11 @@
 # Nhóm <<XX>>
 
 - Seed luyện tập: 3007
-- Repo: <<URL>>
+- Repo: https://github.com/thannt97/K5-L23-Day10-2A202603202-Dataset-Release-Handover
 
 | Họ và tên | MSHV | Tài khoản GitHub | Phần chính |
 |---|---|---|---|
-| <<Thành viên 1>> | <<MSHV>> | <<GitHub>> | Điều phối, quyết định HOLD/Release, phê duyệt báo cáo và bảo mật |
-| <<Thành viên 2>> | <<MSHV>> | <<GitHub>> | Validator lỗi luật, hash/manifest và kiểm thử seed/lô sạch |
-| <<Thành viên 3>> | <<MSHV>> | <<GitHub>> | Đối chiếu detection–panoptic, review ảnh và review_log.csv |
-| <<Thành viên 4>> | <<MSHV>> | <<GitHub>> | Handover v2, lineage, truy vết, đóng gói và check_handover |
+| Nguyễn Thanh Thản | 2A202603202 | thannt97 | Điều phối, quyết định HOLD/Release, phê duyệt báo cáo và bảo mật |
+| Đào Quang Tuấn | 2A202603194 | daotuan6325-lang | Validator lỗi luật, hash/manifest và kiểm thử seed/lô sạch |
+| Nguyễn Đại | 2A202603072 | dai1504 | Đối chiếu detection–panoptic, review ảnh và review_log.csv |
+| Phan Thanh Hào | 2A202603165 | phanthanhhao0612 | Handover v2, lineage, truy vết, đóng gói và check_handover |
