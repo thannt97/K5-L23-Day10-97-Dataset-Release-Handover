@@ -18,4 +18,4 @@ SHA-256 chứng minh bytes của file trong manifest không bị đổi kể t�
 `tier_a` gồm ảnh thuộc scene team AI nêu, có box detection của lớp đổi quy tắc và job dùng guideline cũ v1.2. `tier_b` là các ảnh còn lại cùng điều kiện. Guideline được lấy từ `jobs.csv`, không lấy `metadata.json` theo ảnh vì trường metadata có thể chính là lỗi `guideline_mismatch`.
 
 ## 6. Bug hoặc điểm chưa rõ trong lab (nếu có)
-<<>>
+Chưa phát hiện bug làm sai kết quả. Hàng đợi `instance_merge` ban đầu quá lớn; nhóm dùng lô sạch để hiệu chỉnh ngưỡng coverage pixel và IoU box, không dùng `_private` hay dò điểm từng candidate.
