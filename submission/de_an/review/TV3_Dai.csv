@@ -1,27 +1,27 @@
 ﻿image,type,detail,reviewer,verdict,note
-img_0116,class_or_category_swap,detection=cell phone; panoptic=remote; bbox_iou=0.98,Nguyen Dai,,
-img_0120,instance_merge,panoptic=person; separate_box_coverage=2.00,Nguyen Dai,,
-img_0129,instance_merge,panoptic=toilet; separate_box_coverage=1.30,Nguyen Dai,,
-img_0129,instance_merge,panoptic=toilet; separate_box_coverage=1.40,Nguyen Dai,,
-img_0129,instance_merge,panoptic=toilet; separate_box_coverage=1.43,Nguyen Dai,,
-img_0129,instance_merge,panoptic=toilet; separate_box_coverage=1.51,Nguyen Dai,,
-img_0129,instance_merge,panoptic=toilet; separate_box_coverage=1.62,Nguyen Dai,,
-img_0129,instance_merge,panoptic=toilet; separate_box_coverage=1.68,Nguyen Dai,,
-img_0135,bbox_drift,class=bird; best_same_class_iou=0.43,Nguyen Dai,,
-img_0142,instance_merge,panoptic=person; separate_box_coverage=1.81,Nguyen Dai,,
-img_0150,instance_merge,panoptic=banana; separate_box_coverage=1.52,Nguyen Dai,,
-img_0156,class_or_category_swap,detection=sink; panoptic=boat; bbox_iou=1.00,Nguyen Dai,,
-img_0156,missing_box,panoptic=boat; area=32475,Nguyen Dai,,
-img_0163,missing_box,panoptic=person; area=10575,Nguyen Dai,,
-img_0173,class_or_category_swap,detection=chair; panoptic=couch; bbox_iou=0.88,Nguyen Dai,,
-img_0186,bbox_drift,class=person; best_same_class_iou=0.18,Nguyen Dai,,
-img_0191,instance_merge,panoptic=person; separate_box_coverage=1.40,Nguyen Dai,,
-img_0193,class_or_category_swap,detection=cow; panoptic=horse; bbox_iou=0.99,Nguyen Dai,,
-img_0193,instance_merge,panoptic=cow; separate_box_coverage=1.42,Nguyen Dai,,
-img_0193,missing_box,panoptic=horse; area=7624,Nguyen Dai,,
-img_0195,instance_merge,panoptic=chair; separate_box_coverage=1.55,Nguyen Dai,,
-img_0195,instance_merge,panoptic=person; separate_box_coverage=1.68,Nguyen Dai,,
-img_0196,instance_merge,panoptic=person; separate_box_coverage=1.65,Nguyen Dai,,
-img_0196,instance_merge,panoptic=person; separate_box_coverage=2.00,Nguyen Dai,,
-img_0197,instance_merge,panoptic=person; separate_box_coverage=1.47,Nguyen Dai,,
-img_0199,instance_merge,panoptic=person; separate_box_coverage=1.44,Nguyen Dai,,
+img_0116,class_swap,detection=cell phone; panoptic=remote; bbox_iou=0.98,Nguyen Dai,confirmed,"Vật nằm trên giường là điều khiển từ xa, không phải điện thoại."
+img_0120,instance_merge,panoptic=person; separate_box_coverage=2.00,Nguyen Dai,confirmed,Các người chơi bóng chày đứng tách biệt nhưng có segment person phủ qua nhiều người.
+img_0129,instance_merge,panoptic=toilet; separate_box_coverage=1.30,Nguyen Dai,rejected,Nhiều bồn cầu riêng biệt xếp sát nhau; không thấy một segment gộp hai bồn cầu.
+img_0129,instance_merge,panoptic=toilet; separate_box_coverage=1.40,Nguyen Dai,rejected,"Các bồn cầu ở nhiều vị trí khác nhau và box chồng lấn theo phối cảnh, không phải lỗi gộp."
+img_0129,instance_merge,panoptic=toilet; separate_box_coverage=1.43,Nguyen Dai,rejected,Mỗi bồn cầu là vật thể riêng trong dãy; ảnh không cho thấy mask toilet gộp nhiều chiếc.
+img_0129,instance_merge,panoptic=toilet; separate_box_coverage=1.51,Nguyen Dai,rejected,"Dãy bồn cầu có các vật thể tách biệt, các vùng chồng lấn không đủ để kết luận gộp instance."
+img_0129,instance_merge,panoptic=toilet; separate_box_coverage=1.62,Nguyen Dai,rejected,Các toilet xếp sát và che nhau do góc chụp; không thấy segment chung cho hai toilet.
+img_0129,instance_merge,panoptic=toilet; separate_box_coverage=1.68,Nguyen Dai,rejected,Ảnh có nhiều bồn cầu riêng; box giao nhau không chứng minh panoptic đã gộp instance.
+img_0135,bbox_drift,class=bird; best_same_class_iou=0.43,Nguyen Dai,rejected,Hai tượng chim đứng kề nhau; vùng bird bao cả đôi nên đây không phải lệch box của một chim.
+img_0142,instance_merge,panoptic=person; separate_box_coverage=1.81,Nguyen Dai,confirmed,Các cầu thủ đứng riêng nhau nhưng một vùng person bao phủ chồng sang người kế bên.
+img_0150,instance_merge,panoptic=banana; separate_box_coverage=1.52,Nguyen Dai,rejected,"Các lát chuối rời trên bánh waffle nằm sát nhau, không thấy segment banana gộp nhiều lát."
+img_0156,class_swap,detection=sink; panoptic=boat; bbox_iou=1.00,Nguyen Dai,confirmed,"Vật nổi sát mép nước là thuyền, không phải bồn rửa như nhãn detection."
+img_0156,missing_box,panoptic=boat; area=32475,Nguyen Dai,rejected,"Thuyền đã có box cùng vị trí nhưng bị gán nhãn sink; đây là lỗi đổi loại, không phải thiếu box."
+img_0163,missing_box,panoptic=person; area=10575,Nguyen Dai,rejected,Ảnh đã có lỗi luật invalid_class; mỗi ảnh tối đa một lỗi nên không tính thêm missing_box. Khi xem ảnh ghi nhận: Có người ở phía trong cửa hàng và bàn tay người cầm bánh; một vùng person không có box tương ứng.
+img_0173,class_swap,detection=chair; panoptic=couch; bbox_iou=0.88,Nguyen Dai,confirmed,"Ghế dài bọc vải ở tiền cảnh là couch, không phải chair như nhãn detection."
+img_0186,bbox_drift,class=person; best_same_class_iou=0.18,Nguyen Dai,rejected,Ảnh đã có lỗi luật invalid_category_id; mỗi ảnh tối đa một lỗi nên không tính thêm bbox_drift. Khi xem ảnh ghi nhận: Một người đứng gần bánh trước máy bay có vùng person lệch đáng kể so với các box person.
+img_0191,instance_merge,panoptic=person; separate_box_coverage=1.40,Nguyen Dai,confirmed,Nhiều người thả diều đứng tách nhau; một segment person che phủ đồng thời hơn một người.
+img_0193,category_swap,detection=cow; panoptic=horse; bbox_iou=0.99,Nguyen Dai,confirmed,"Con vật màu nâu ở phía sau là bò, không phải ngựa như nhãn panoptic."
+img_0193,instance_merge,panoptic=cow; separate_box_coverage=1.42,Nguyen Dai,rejected,Hai con bò đứng cách nhau; không thấy một segment cow gộp cả hai con thành một instance.
+img_0193,missing_box,panoptic=horse; area=7624,Nguyen Dai,rejected,Vùng horse thực chất là một con bò đã có box cow; đây là lỗi đổi nhãn chứ không phải thiếu box.
+img_0195,instance_merge,panoptic=chair; separate_box_coverage=1.55,Nguyen Dai,rejected,Các ghế quanh bàn và phía sau là các vật thể riêng; không thấy segment chair gộp nhiều ghế.
+img_0195,instance_merge,panoptic=person; separate_box_coverage=1.68,Nguyen Dai,rejected,"Người đàn ông, trẻ em và người ngồi phía sau tách biệt; không thấy một segment person gộp họ."
+img_0196,instance_merge,panoptic=person; separate_box_coverage=1.65,Nguyen Dai,rejected,"Những người cầm ô bị che một phần nhưng vẫn là các cá thể riêng, không thấy mask person gộp họ."
+img_0196,instance_merge,panoptic=person; separate_box_coverage=2.00,Nguyen Dai,rejected,Các nhân vật trong đoàn diễu hành đứng tách nhau dưới ô; không có bằng chứng segment person gộp đôi người.
+img_0197,instance_merge,panoptic=person; separate_box_coverage=1.47,Nguyen Dai,rejected,Người lái xe máy và các hình phản chiếu tách biệt; không thấy segment person bao trùm nhiều người.
+img_0199,instance_merge,panoptic=person; separate_box_coverage=1.44,Nguyen Dai,rejected,"Các người lớn và trẻ em quanh bàn picnic là các cá thể tách biệt, không thấy segment person gộp họ."

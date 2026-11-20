@@ -1,0 +1,96 @@
+image,type,verdict,note
+img_0017,class_swap,confirmed,Thấy một chiếc điện thoại cảm ứng khá rõ trong ảnh (người xem: Nguyen Thanh Than)
+img_0020,bbox_drift,rejected,"xuất hiện 2 con chim, phần box đỏ chỉ lệch nhẹ ở viền box xanh (người xem: Nguyen Thanh Than)"
+img_0026,instance_merge,rejected,"mặc dù xe phía trước lỗi không tô phủ hết, nhung không liên quan đến lỗi instance_merge (người xem: Nguyen Thanh Than)"
+img_0028,instance_merge,rejected,"cùng 1 chiếc thuyền nhưng bị đánh thành 2 instance, nhưng đây không phải lỗi instance_merge (người xem: Nguyen Thanh Than)"
+img_0033,instance_merge,rejected,"có 6 cái chay được gán nhãn tách biệt, không có lỗi (người xem: Nguyen Thanh Than)"
+img_0036,instance_merge,rejected,"bồn rửa tay được gán khá rõ, không có lỗi (người xem: Nguyen Thanh Than)"
+img_0040,instance_merge,rejected,có 4 con cừu đã được tách ra thành 4 instance riêng biệt (người xem: Nguyen Thanh Than)
+img_0040,instance_merge,rejected,có 4 con cừu đã được tách ra thành 4 instance riêng biệt (người xem: Nguyen Thanh Than)
+img_0045,instance_merge,rejected,"13 người được gán nhãn tách biệt, không có lỗi (người xem: Nguyen Thanh Than)"
+img_0046,class_or_category_swap,rejected,có 5 chiếc xe được gán nhãn chính xác (người xem: Nguyen Thanh Than)
+img_0049,instance_merge,rejected,"có 6 người trong ảnh được gán nhãn, không xuất hiện box nào trùng (người xem: Nguyen Thanh Than)"
+img_0050,bbox_drift,rejected,"4 cụm đèn giao thông được gán nhãn chính xác, box đỏ không bị lệch khỏi box xanh (người xem: Nguyen Thanh Than)"
+img_0050,instance_merge,confirmed,"cụm xe ở phía xa, khá nhiều xe bị gộp thành 1 instance (người xem: Nguyen Thanh Than)"
+img_0050,instance_merge,confirmed,"cụm xe ở phía xa, khá nhiều xe bị gộp thành 1 instance (người xem: Nguyen Thanh Than)"
+img_0051,instance_merge,rejected,suất hiện 4 chiếc ghế được gán đúng (người xem: Nguyen Thanh Than)
+img_0053,instance_merge,confirmed,"có 5 miếng chuối, xuất hiện 2 miếng bị gán trùng vào 1 đối tượng (người xem: Nguyen Thanh Than)"
+img_0054,instance_merge,rejected,"8 chiếc ghế đã được gán nhãn, không trùng đối tượng nào (người xem: Nguyen Thanh Than)"
+img_0054,instance_merge,rejected,"có 12 người đã được gán nhãn chính xác, không có lỗi (người xem: Nguyen Thanh Than)"
+img_0055,instance_merge,rejected,"có 4 người trong ảnh có segment riêng, không có hai người bị gộp (người xem: Nguyen Thanh Than)"
+img_0055,missing_box,confirmed,có 1 người được gán vùng xanh nhưng không phát hiện box đỏ nào (người xem: Nguyen Thanh Than)
+img_0060,instance_merge,rejected,"Không có file ảnh nên chỉ xem được mask. Đàn cừu đứng sát nhau, con bị cờ ở bên trái đứng trước, lấn sang box hai con bên cạnh. Mỗi con vẫn có segment và box riêng, không bị gộp. (người xem: Dao Quang Tuan)"
+img_0060,instance_merge,rejected,"Không có file ảnh, chỉ xem mask. Con cừu nhỏ ở giữa đàn có segment và box riêng, chỉ lấn một ít sang box con đứng sau. Không có con nào bị gộp. (người xem: Dao Quang Tuan)"
+img_0060,instance_merge,rejected,"Không có file ảnh, chỉ xem mask. Con cừu thấp phía trước bị box con cừu to phía sau trùm lên một phần, nhưng hai con vẫn có hai mask và hai box riêng. (người xem: Dao Quang Tuan)"
+img_0062,bbox_drift,rejected,"Đôi ván trượt dưới chân em bé mặc đồ tối, đứng cạnh người lớn áo đỏ. Vật quá nhỏ nên box với segment chỉ lệch nhau chút xíu là IoU tụt, thực ra cả hai vẫn đánh đúng đôi ván đó. (người xem: Dao Quang Tuan)"
+img_0065,class_or_category_swap,rejected,"Vật trên kệ dưới TV là hũ gốm nhỏ vẽ hoa đỏ, không có quai, đứng chung hàng với các bình trang trí, ghi vase là hợp lý. Detection có cả box vase lẫn box cup chồng lên cùng một vật, là nhãn đôi sẵn có chứ không phải bị đổi lớp. (người xem: Dao Quang Tuan)"
+img_0065,class_or_category_swap,rejected,"Vật là lọ gốm nhỏ hình trụ có hoa văn, đứng cạnh bình men xanh trên kệ, không phải cốc uống nước. Detection có cả box vase và box cup trùng nhau, segment vase là đúng. (người xem: Dao Quang Tuan)"
+img_0066,instance_merge,rejected,"Người đàn ông ngồi sofa cầm chai bia phía sau, lọt vào box người áo sơ mi xám đang chơi Wii. Anh ấy có segment và box riêng, mỗi người một mask, không gộp. (người xem: Dao Quang Tuan)"
+img_0069,instance_merge,rejected,"Đám cưới trong nhà thờ. Segment này là phần lưng ghế lộ ra giữa mục sư và cô dâu, có box riêng. Do ghế xếp sát nhau nên nó nằm một phần trong box hàng ghế phía sau. (người xem: Dao Quang Tuan)"
+img_0069,instance_merge,rejected,"Lưng ghế ngay sau lưng cô dâu có box riêng, chỉ nằm gọn trong box hàng ghế rộng phía sau. Hai ghế có mask riêng, chỉ là box chồng nhau. (người xem: Dao Quang Tuan)"
+img_0069,instance_merge,rejected,"Segment là ông mục sư mặc vest đen cầm sách, đứng chen giữa chú rể và cô dâu nên lấn vào box của cả hai. Chỉ là một người, có box riêng, không gộp. (người xem: Dao Quang Tuan)"
+img_0070,instance_merge,rejected,"Người ngồi ở mép phải phía sau thanh niên áo trắng, bị box của thanh niên trùm hết nên điểm cao. Người này có segment và box riêng, không bị gộp. (người xem: Dao Quang Tuan)"
+img_0071,instance_merge,rejected,"Người áo xanh dương đứng phía sau bên trái, cạnh người mặc áo khoác đỏ. Hai người tách biệt, mỗi người có mask và box riêng, chỉ là box chồng một phần. (người xem: Dao Quang Tuan)"
+img_0075,instance_merge,rejected,"Sân bóng chày: người đứng ở hàng rào phía sau bị box cầu thủ đánh bóng phía trước trùm lên. Hai người ở xa nhau, có segment và box riêng. (người xem: Dao Quang Tuan)"
+img_0075,instance_merge,rejected,"Người áo trắng đứng sau lưới bên phải bị box trọng tài đang quỳ phía trước trùm lên. Hai người khác nhau, mỗi người có mask riêng. (người xem: Dao Quang Tuan)"
+img_0080,instance_merge,rejected,"Trong xe buýt, người áo trắng đứng phía sau giữa người áo hoa và ông áo sơ mi xanh. Người này có segment và box riêng, chỉ lọt một phần vào box người áo hoa. (người xem: Dao Quang Tuan)"
+img_0080,instance_merge,rejected,"Thanh niên áo xanh đeo kính cúi đầu phía sau, bị người áo đen che một phần nên nằm trong box người áo đen. Có segment và box riêng, không gộp. (người xem: Dao Quang Tuan)"
+img_0080,instance_merge,rejected,"Khuôn mặt một người ló ra sau vai ông áo sơ mi xanh, nằm trọn trong box của ông nên điểm cao. Hai người, hai segment riêng. (người xem: Dao Quang Tuan)"
+img_0080,instance_merge,rejected,"Hai cái đầu người nhỏ ở hậu cảnh, một sau vai anh râu đeo kính, một sau đầu người áo hoa. Mỗi người có box riêng, chỉ là nằm trong box người đứng trước. (người xem: Dao Quang Tuan)"
+img_0081,class_swap,confirmed,"Vật trong box là cây vợt tennis có logo chữ W, quả bóng vàng ngay trước mặt vợt, nữ VĐV đang đánh thuận tay. Trong ảnh không có con gấu nào. Panoptic ghi vợt tennis là đúng, detection ghi bear là sai. (người xem: Dao Quang Tuan)"
+img_0081,missing_box,rejected,"Cây vợt tennis đã có box đúng chỗ, chỉ bị ghi nhầm lớp thành bear (đã báo ở dòng class_swap). Box không thiếu, tính thêm missing_box là đếm trùng một lỗi. (người xem: Dao Quang Tuan)"
+img_0088,missing_box,confirmed,"Hai ghế nhựa trắng đặt cạnh nhau dưới mái hiên, bên trái con ngựa lùn đen. Ghế bên trái có box, ghế bên phải nhìn rõ, không bị che, có segment chair nhưng detection không có box. (người xem: Dao Quang Tuan)"
+img_0093,instance_merge,rejected,"Khán giả đứng sau đống rơm, ngay sau lưng tay đua mô tô nên lọt một phần vào box tay đua. Khán giả có segment và box riêng, không bị gộp. (người xem: Dao Quang Tuan)"
+img_0093,instance_merge,rejected,"Một khán giả nhỏ ở hậu cảnh nằm gọn trong box lớn của tay đua đội mũ trắng. Người này có box riêng, đám đông bên phải đã được đánh crowd. (người xem: Dao Quang Tuan)"
+img_0101,instance_merge,rejected,"Con ngựa vằn cúi ăn cỏ ở mép trái, một phần bị box con ngựa vằn phía trước trùm lên. Mỗi con có mask và box riêng, viền mask bám đúng từng con. (người xem: Dao Quang Tuan)"
+img_0105,bbox_drift,rejected,"Box ôm sát con mèo xám nằm ở ngưỡng cửa, box đúng. Segment mèo bị dính thêm một dải pixel lạ ở đáy ảnh, cách xa con mèo, đây là lỗi panoptic (thing_overlap) chứ không phải box lệch. (người xem: Dao Quang Tuan)"
+img_0105,missing_box,rejected,"Con mèo đã có box đúng chỗ. Segment chỉ không ghép được với box vì bị dính dải pixel lạ ở đáy ảnh (lỗi thing_overlap), detection không thiếu box. (người xem: Dao Quang Tuan)"
+img_0110,instance_merge,rejected,"Rổ inox đục lỗ đựng nải chuối. Segment nhỏ phía trên là cái quai cong của rổ, cả detection lẫn panoptic đều tách nó thành một bowl riêng. Đây là nhãn gốc, không phải hai vật bị gộp. (người xem: Dao Quang Tuan)"
+img_0111,instance_merge,rejected,"Bãi biển sỏi có hai thuyền gỗ: thuyền lớn phía trước cạnh máy kéo và thuyền nhỏ phía sau. Mỗi thuyền có segment và box riêng, thuyền sau chỉ bị box thuyền trước trùm lên. (người xem: Dao Quang Tuan)"
+img_0116,class_swap,confirmed,"Vật nằm trên giường là điều khiển từ xa, không phải điện thoại. (người xem: Nguyen Dai)"
+img_0120,instance_merge,confirmed,Các người chơi bóng chày đứng tách biệt nhưng có segment person phủ qua nhiều người. (người xem: Nguyen Dai)
+img_0129,instance_merge,rejected,Nhiều bồn cầu riêng biệt xếp sát nhau; không thấy một segment gộp hai bồn cầu. (người xem: Nguyen Dai)
+img_0129,instance_merge,rejected,"Các bồn cầu ở nhiều vị trí khác nhau và box chồng lấn theo phối cảnh, không phải lỗi gộp. (người xem: Nguyen Dai)"
+img_0129,instance_merge,rejected,Mỗi bồn cầu là vật thể riêng trong dãy; ảnh không cho thấy mask toilet gộp nhiều chiếc. (người xem: Nguyen Dai)
+img_0129,instance_merge,rejected,"Dãy bồn cầu có các vật thể tách biệt, các vùng chồng lấn không đủ để kết luận gộp instance. (người xem: Nguyen Dai)"
+img_0129,instance_merge,rejected,Các toilet xếp sát và che nhau do góc chụp; không thấy segment chung cho hai toilet. (người xem: Nguyen Dai)
+img_0129,instance_merge,rejected,Ảnh có nhiều bồn cầu riêng; box giao nhau không chứng minh panoptic đã gộp instance. (người xem: Nguyen Dai)
+img_0135,bbox_drift,rejected,Hai tượng chim đứng kề nhau; vùng bird bao cả đôi nên đây không phải lệch box của một chim. (người xem: Nguyen Dai)
+img_0142,instance_merge,confirmed,Các cầu thủ đứng riêng nhau nhưng một vùng person bao phủ chồng sang người kế bên. (người xem: Nguyen Dai)
+img_0150,instance_merge,rejected,"Các lát chuối rời trên bánh waffle nằm sát nhau, không thấy segment banana gộp nhiều lát. (người xem: Nguyen Dai)"
+img_0156,class_swap,confirmed,"Vật nổi sát mép nước là thuyền, không phải bồn rửa như nhãn detection. (người xem: Nguyen Dai)"
+img_0156,missing_box,rejected,"Thuyền đã có box cùng vị trí nhưng bị gán nhãn sink; đây là lỗi đổi loại, không phải thiếu box. (người xem: Nguyen Dai)"
+img_0163,missing_box,rejected,Ảnh đã có lỗi luật invalid_class; mỗi ảnh tối đa một lỗi nên không tính thêm missing_box. Khi xem ảnh ghi nhận: Có người ở phía trong cửa hàng và bàn tay người cầm bánh; một vùng person không có box tương ứng. (người xem: Nguyen Dai)
+img_0173,class_swap,confirmed,"Ghế dài bọc vải ở tiền cảnh là couch, không phải chair như nhãn detection. (người xem: Nguyen Dai)"
+img_0186,bbox_drift,rejected,Ảnh đã có lỗi luật invalid_category_id; mỗi ảnh tối đa một lỗi nên không tính thêm bbox_drift. Khi xem ảnh ghi nhận: Một người đứng gần bánh trước máy bay có vùng person lệch đáng kể so với các box person. (người xem: Nguyen Dai)
+img_0191,instance_merge,confirmed,Nhiều người thả diều đứng tách nhau; một segment person che phủ đồng thời hơn một người. (người xem: Nguyen Dai)
+img_0193,category_swap,confirmed,"Con vật màu nâu ở phía sau là bò, không phải ngựa như nhãn panoptic. (người xem: Nguyen Dai)"
+img_0193,instance_merge,rejected,Hai con bò đứng cách nhau; không thấy một segment cow gộp cả hai con thành một instance. (người xem: Nguyen Dai)
+img_0193,missing_box,rejected,Vùng horse thực chất là một con bò đã có box cow; đây là lỗi đổi nhãn chứ không phải thiếu box. (người xem: Nguyen Dai)
+img_0195,instance_merge,rejected,Các ghế quanh bàn và phía sau là các vật thể riêng; không thấy segment chair gộp nhiều ghế. (người xem: Nguyen Dai)
+img_0195,instance_merge,rejected,"Người đàn ông, trẻ em và người ngồi phía sau tách biệt; không thấy một segment person gộp họ. (người xem: Nguyen Dai)"
+img_0196,instance_merge,rejected,"Những người cầm ô bị che một phần nhưng vẫn là các cá thể riêng, không thấy mask person gộp họ. (người xem: Nguyen Dai)"
+img_0196,instance_merge,rejected,Các nhân vật trong đoàn diễu hành đứng tách nhau dưới ô; không có bằng chứng segment person gộp đôi người. (người xem: Nguyen Dai)
+img_0197,instance_merge,rejected,Người lái xe máy và các hình phản chiếu tách biệt; không thấy segment person bao trùm nhiều người. (người xem: Nguyen Dai)
+img_0199,instance_merge,rejected,"Các người lớn và trẻ em quanh bàn picnic là các cá thể tách biệt, không thấy segment person gộp họ. (người xem: Nguyen Dai)"
+img_0200,instance_merge,rejected,"Ảnh có 5 người trượt tuyết và panoptic có đủ 5 segment tương ứng từng người riêng biệt, không có hiện tượng gộp đối tượng. (người xem: Phan Thanh Hao)"
+img_0215,instance_merge,rejected,"Ảnh chụp mèo và bé gái trên giường, cả detection và panoptic đều có nhãn riêng cho giường và chăn đệm, không bị gộp segment. (người xem: Phan Thanh Hao)"
+img_0218,instance_merge,rejected,"Ảnh có 3 chiếc ghế dài (bench) bằng gỗ màu xanh và panoptic có đủ 3 segment riêng cho từng ghế, không bị gộp. (người xem: Phan Thanh Hao)"
+img_0220,missing_box,confirmed,"Ảnh chụp cận cảnh đầu con hươu cao cổ rất lớn ở chính giữa nhưng nhãn detection hoàn toàn thiếu box giraffe, panoptic gán đúng. (người xem: Phan Thanh Hao)"
+img_0221,bbox_drift,rejected,"Hai box person bao gồm cô gái đứng bên trái và người đàn ông cạnh xe máy đều ôm rất khít người, không bị lệch bounding box. (người xem: Phan Thanh Hao)"
+img_0225,instance_merge,rejected,"Các nải chuối trên sọt và nải chuối nhỏ góc phải đều có segment panoptic riêng tương ứng từng box detection, không bị gộp. (người xem: Phan Thanh Hao)"
+img_0225,instance_merge,rejected,"Các nhân vật trên phố chợ đều có box detection và segment panoptic riêng lẻ tương ứng, không có segment nào bị gộp người. (người xem: Phan Thanh Hao)"
+img_0228,instance_merge,rejected,"Ảnh nhóm người dự tiệc cưới cắt bánh, 7 người đều có 7 box và 7 segment riêng biệt khớp 1-1, không bị gộp segment. (người xem: Phan Thanh Hao)"
+img_0228,instance_merge,rejected,"Tương tự ứng viên trên cùng ảnh, các vị khách và cô dâu chú rể đều có segment riêng, không có hiện tượng gộp cá thể. (người xem: Phan Thanh Hao)"
+img_0229,class_or_category_swap,rejected,"Các cốc nước uống trên bàn trong detection đã có sẵn cả box cup và box wine glass chồng lấn từ nhãn gốc COCO, không phải lỗi inject. (người xem: Phan Thanh Hao)"
+img_0229,instance_merge,rejected,"Khách ngồi quanh bàn ăn ngoài trời đều có box và segment riêng, segment nền phía xa là đám đông (crowd=1), không bị gộp. (người xem: Phan Thanh Hao)"
+img_0231,instance_merge,rejected,"Ảnh chụp selfie đông người phía trước, người chụp và từng người trong đám đông đều có segment panoptic riêng, không bị gộp. (người xem: Phan Thanh Hao)"
+img_0233,instance_merge,rejected,"Xe máy phía trước và xe máy đằng sau đều có box và segment riêng tương ứng từng chiếc xe, không bị gộp segment. (người xem: Phan Thanh Hao)"
+img_0233,instance_merge,rejected,"Cả 3 xe máy trong ảnh đều có 3 segment panoptic độc lập, không có xe nào bị gộp chung vào xe khác. (người xem: Phan Thanh Hao)"
+img_0238,class_swap,confirmed,"Chiếc xe ô tô con 4 chỗ màu xanh lá ở góc trái là car nhưng nhãn detection bị gán nhầm thành bus, panoptic gán đúng car. (người xem: Phan Thanh Hao)"
+img_0243,class_or_category_swap,rejected,"Chiếc ghế dài màu xanh lá cây trong detection được gán cả 2 box bench và chair chồng lấn từ COCO, panoptic gán bench, không phải lỗi. (người xem: Phan Thanh Hao)"
+img_0246,class_or_category_swap,rejected,"Balo đeo của cậu bé trên sân ga trong detection có cả 2 nhãn backpack và handbag từ COCO, panoptic gán backpack đúng thực tế. (người xem: Phan Thanh Hao)"
+img_0247,class_or_category_swap,rejected,"Hộp nhựa màu xanh bên trái trên bàn trong nhãn detection có cả box cup và bowl chồng nhau, panoptic gán cup, không có lỗi inject. (người xem: Phan Thanh Hao)"
+img_0247,class_or_category_swap,rejected,"Cốc nhựa màu xanh bên phải có chữ TOP-LINE trong detection có cả box cup và bowl, panoptic gán bowl, đây là do nhãn gốc COCO. (người xem: Phan Thanh Hao)"
+img_0248,instance_merge,rejected,"Cầu thủ bóng chày trên sân và trọng tài đều có segment riêng, khán giả phía sau được gom vào segment crowd=1, không có gộp sai. (người xem: Phan Thanh Hao)"
+img_0249,instance_merge,rejected,"Các bát đựng đồ ăn trên bàn tiệc buffet đều có segment panoptic riêng từng bát, các bát phía xa gom vào crowd=1, không bị gộp. (người xem: Phan Thanh Hao)"

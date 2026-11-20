@@ -1,22 +1,22 @@
 ﻿image,type,detail,reviewer,verdict,note
-img_0200,instance_merge,panoptic=person; separate_box_coverage=1.72,Phan Thanh Hao,,
-img_0215,instance_merge,panoptic=bed; separate_box_coverage=2.00,Phan Thanh Hao,,
-img_0218,instance_merge,panoptic=bench; separate_box_coverage=1.82,Phan Thanh Hao,,
-img_0220,missing_box,panoptic=giraffe; area=30978,Phan Thanh Hao,,
-img_0221,bbox_drift,class=person; best_same_class_iou=0.42,Phan Thanh Hao,,
-img_0225,instance_merge,panoptic=banana; separate_box_coverage=1.93,Phan Thanh Hao,,
-img_0225,instance_merge,panoptic=person; separate_box_coverage=1.36,Phan Thanh Hao,,
-img_0228,instance_merge,panoptic=person; separate_box_coverage=1.47,Phan Thanh Hao,,
-img_0228,instance_merge,panoptic=person; separate_box_coverage=1.57,Phan Thanh Hao,,
-img_0229,class_or_category_swap,detection=wine glass; panoptic=cup; bbox_iou=0.90,Phan Thanh Hao,,
-img_0229,instance_merge,panoptic=person; separate_box_coverage=1.61,Phan Thanh Hao,,
-img_0231,instance_merge,panoptic=person; separate_box_coverage=2.00,Phan Thanh Hao,,
-img_0233,instance_merge,panoptic=motorcycle; separate_box_coverage=1.39,Phan Thanh Hao,,
-img_0233,instance_merge,panoptic=motorcycle; separate_box_coverage=1.42,Phan Thanh Hao,,
-img_0238,class_or_category_swap,detection=bus; panoptic=car; bbox_iou=0.98,Phan Thanh Hao,,
-img_0243,class_or_category_swap,detection=chair; panoptic=bench; bbox_iou=0.87,Phan Thanh Hao,,
-img_0246,class_or_category_swap,detection=handbag; panoptic=backpack; bbox_iou=0.79,Phan Thanh Hao,,
-img_0247,class_or_category_swap,detection=bowl; panoptic=cup; bbox_iou=0.80,Phan Thanh Hao,,
-img_0247,class_or_category_swap,detection=cup; panoptic=bowl; bbox_iou=0.96,Phan Thanh Hao,,
-img_0248,instance_merge,panoptic=person; separate_box_coverage=2.00,Phan Thanh Hao,,
-img_0249,instance_merge,panoptic=bowl; separate_box_coverage=1.49,Phan Thanh Hao,,
+"img_0200","instance_merge","panoptic=person; separate_box_coverage=1.72","Phan Thanh Hao","rejected","Ảnh có 5 người trượt tuyết và panoptic có đủ 5 segment tương ứng từng người riêng biệt, không có hiện tượng gộp đối tượng."
+"img_0215","instance_merge","panoptic=bed; separate_box_coverage=2.00","Phan Thanh Hao","rejected","Ảnh chụp mèo và bé gái trên giường, cả detection và panoptic đều có nhãn riêng cho giường và chăn đệm, không bị gộp segment."
+"img_0218","instance_merge","panoptic=bench; separate_box_coverage=1.82","Phan Thanh Hao","rejected","Ảnh có 3 chiếc ghế dài (bench) bằng gỗ màu xanh và panoptic có đủ 3 segment riêng cho từng ghế, không bị gộp."
+"img_0220","missing_box","panoptic=giraffe; area=30978","Phan Thanh Hao","confirmed","Ảnh chụp cận cảnh đầu con hươu cao cổ rất lớn ở chính giữa nhưng nhãn detection hoàn toàn thiếu box giraffe, panoptic gán đúng."
+"img_0221","bbox_drift","class=person; best_same_class_iou=0.42","Phan Thanh Hao","rejected","Hai box person bao gồm cô gái đứng bên trái và người đàn ông cạnh xe máy đều ôm rất khít người, không bị lệch bounding box."
+"img_0225","instance_merge","panoptic=banana; separate_box_coverage=1.93","Phan Thanh Hao","rejected","Các nải chuối trên sọt và nải chuối nhỏ góc phải đều có segment panoptic riêng tương ứng từng box detection, không bị gộp."
+"img_0225","instance_merge","panoptic=person; separate_box_coverage=1.36","Phan Thanh Hao","rejected","Các nhân vật trên phố chợ đều có box detection và segment panoptic riêng lẻ tương ứng, không có segment nào bị gộp người."
+"img_0228","instance_merge","panoptic=person; separate_box_coverage=1.47","Phan Thanh Hao","rejected","Ảnh nhóm người dự tiệc cưới cắt bánh, 7 người đều có 7 box và 7 segment riêng biệt khớp 1-1, không bị gộp segment."
+"img_0228","instance_merge","panoptic=person; separate_box_coverage=1.57","Phan Thanh Hao","rejected","Tương tự ứng viên trên cùng ảnh, các vị khách và cô dâu chú rể đều có segment riêng, không có hiện tượng gộp cá thể."
+"img_0229","class_or_category_swap","detection=wine glass; panoptic=cup; bbox_iou=0.90","Phan Thanh Hao","rejected","Các cốc nước uống trên bàn trong detection đã có sẵn cả box cup và box wine glass chồng lấn từ nhãn gốc COCO, không phải lỗi inject."
+"img_0229","instance_merge","panoptic=person; separate_box_coverage=1.61","Phan Thanh Hao","rejected","Khách ngồi quanh bàn ăn ngoài trời đều có box và segment riêng, segment nền phía xa là đám đông (crowd=1), không bị gộp."
+"img_0231","instance_merge","panoptic=person; separate_box_coverage=2.00","Phan Thanh Hao","rejected","Ảnh chụp selfie đông người phía trước, người chụp và từng người trong đám đông đều có segment panoptic riêng, không bị gộp."
+"img_0233","instance_merge","panoptic=motorcycle; separate_box_coverage=1.39","Phan Thanh Hao","rejected","Xe máy phía trước và xe máy đằng sau đều có box và segment riêng tương ứng từng chiếc xe, không bị gộp segment."
+"img_0233","instance_merge","panoptic=motorcycle; separate_box_coverage=1.42","Phan Thanh Hao","rejected","Cả 3 xe máy trong ảnh đều có 3 segment panoptic độc lập, không có xe nào bị gộp chung vào xe khác."
+"img_0238","class_swap","detection=bus; panoptic=car; bbox_iou=0.98","Phan Thanh Hao","confirmed","Chiếc xe ô tô con 4 chỗ màu xanh lá ở góc trái là car nhưng nhãn detection bị gán nhầm thành bus, panoptic gán đúng car."
+"img_0243","class_or_category_swap","detection=chair; panoptic=bench; bbox_iou=0.87","Phan Thanh Hao","rejected","Chiếc ghế dài màu xanh lá cây trong detection được gán cả 2 box bench và chair chồng lấn từ COCO, panoptic gán bench, không phải lỗi."
+"img_0246","class_or_category_swap","detection=handbag; panoptic=backpack; bbox_iou=0.79","Phan Thanh Hao","rejected","Balo đeo của cậu bé trên sân ga trong detection có cả 2 nhãn backpack và handbag từ COCO, panoptic gán backpack đúng thực tế."
+"img_0247","class_or_category_swap","detection=bowl; panoptic=cup; bbox_iou=0.80","Phan Thanh Hao","rejected","Hộp nhựa màu xanh bên trái trên bàn trong nhãn detection có cả box cup và bowl chồng nhau, panoptic gán cup, không có lỗi inject."
+"img_0247","class_or_category_swap","detection=cup; panoptic=bowl; bbox_iou=0.96","Phan Thanh Hao","rejected","Cốc nhựa màu xanh bên phải có chữ TOP-LINE trong detection có cả box cup và bowl, panoptic gán bowl, đây là do nhãn gốc COCO."
+"img_0248","instance_merge","panoptic=person; separate_box_coverage=2.00","Phan Thanh Hao","rejected","Cầu thủ bóng chày trên sân và trọng tài đều có segment riêng, khán giả phía sau được gom vào segment crowd=1, không có gộp sai."
+"img_0249","instance_merge","panoptic=bowl; separate_box_coverage=1.49","Phan Thanh Hao","rejected","Các bát đựng đồ ăn trên bàn tiệc buffet đều có segment panoptic riêng từng bát, các bát phía xa gom vào crowd=1, không bị gộp."

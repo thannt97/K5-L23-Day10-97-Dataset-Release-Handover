@@ -1,29 +1,29 @@
 ﻿image,type,detail,reviewer,verdict,note
-img_0060,instance_merge,panoptic=sheep; separate_box_coverage=0.97,Dao Quang Tuan,,
-img_0060,instance_merge,panoptic=sheep; separate_box_coverage=1.35,Dao Quang Tuan,,
-img_0060,instance_merge,panoptic=sheep; separate_box_coverage=1.52,Dao Quang Tuan,,
-img_0062,bbox_drift,class=skis; best_same_class_iou=0.43,Dao Quang Tuan,,
-img_0065,class_or_category_swap,detection=cup; panoptic=vase; bbox_iou=0.83,Dao Quang Tuan,,
-img_0065,class_or_category_swap,detection=cup; panoptic=vase; bbox_iou=0.87,Dao Quang Tuan,,
-img_0066,instance_merge,panoptic=person; separate_box_coverage=1.49,Dao Quang Tuan,,
-img_0069,instance_merge,panoptic=chair; separate_box_coverage=1.44,Dao Quang Tuan,,
-img_0069,instance_merge,panoptic=chair; separate_box_coverage=1.79,Dao Quang Tuan,,
-img_0069,instance_merge,panoptic=person; separate_box_coverage=1.11,Dao Quang Tuan,,
-img_0070,instance_merge,panoptic=person; separate_box_coverage=2.00,Dao Quang Tuan,,
-img_0071,instance_merge,panoptic=person; separate_box_coverage=1.47,Dao Quang Tuan,,
-img_0075,instance_merge,panoptic=person; separate_box_coverage=1.72,Dao Quang Tuan,,
-img_0075,instance_merge,panoptic=person; separate_box_coverage=1.76,Dao Quang Tuan,,
-img_0080,instance_merge,panoptic=person; separate_box_coverage=1.37,Dao Quang Tuan,,
-img_0080,instance_merge,panoptic=person; separate_box_coverage=1.78,Dao Quang Tuan,,
-img_0080,instance_merge,panoptic=person; separate_box_coverage=1.98,Dao Quang Tuan,,
-img_0080,instance_merge,panoptic=person; separate_box_coverage=2.00,Dao Quang Tuan,,
-img_0081,class_or_category_swap,detection=bear; panoptic=tennis racket; bbox_iou=0.99,Dao Quang Tuan,,
-img_0081,missing_box,panoptic=tennis racket; area=11119,Dao Quang Tuan,,
-img_0088,missing_box,panoptic=chair; area=3609,Dao Quang Tuan,,
-img_0093,instance_merge,panoptic=person; separate_box_coverage=1.56,Dao Quang Tuan,,
-img_0093,instance_merge,panoptic=person; separate_box_coverage=2.00,Dao Quang Tuan,,
-img_0101,instance_merge,panoptic=zebra; separate_box_coverage=1.40,Dao Quang Tuan,,
-img_0105,bbox_drift,class=cat; best_same_class_iou=0.15,Dao Quang Tuan,,
-img_0105,missing_box,panoptic=cat; area=9658,Dao Quang Tuan,,
-img_0110,instance_merge,panoptic=bowl; separate_box_coverage=2.00,Dao Quang Tuan,,
-img_0111,instance_merge,panoptic=boat; separate_box_coverage=1.79,Dao Quang Tuan,,
+"img_0060","instance_merge","panoptic=sheep; separate_box_coverage=0.97","Dao Quang Tuan","rejected","Không có file ảnh nên chỉ xem được mask. Đàn cừu đứng sát nhau, con bị cờ ở bên trái đứng trước, lấn sang box hai con bên cạnh. Mỗi con vẫn có segment và box riêng, không bị gộp."
+"img_0060","instance_merge","panoptic=sheep; separate_box_coverage=1.35","Dao Quang Tuan","rejected","Không có file ảnh, chỉ xem mask. Con cừu nhỏ ở giữa đàn có segment và box riêng, chỉ lấn một ít sang box con đứng sau. Không có con nào bị gộp."
+"img_0060","instance_merge","panoptic=sheep; separate_box_coverage=1.52","Dao Quang Tuan","rejected","Không có file ảnh, chỉ xem mask. Con cừu thấp phía trước bị box con cừu to phía sau trùm lên một phần, nhưng hai con vẫn có hai mask và hai box riêng."
+"img_0062","bbox_drift","class=skis; best_same_class_iou=0.43","Dao Quang Tuan","rejected","Đôi ván trượt dưới chân em bé mặc đồ tối, đứng cạnh người lớn áo đỏ. Vật quá nhỏ nên box với segment chỉ lệch nhau chút xíu là IoU tụt, thực ra cả hai vẫn đánh đúng đôi ván đó."
+"img_0065","class_or_category_swap","detection=cup; panoptic=vase; bbox_iou=0.83","Dao Quang Tuan","rejected","Vật trên kệ dưới TV là hũ gốm nhỏ vẽ hoa đỏ, không có quai, đứng chung hàng với các bình trang trí, ghi vase là hợp lý. Detection có cả box vase lẫn box cup chồng lên cùng một vật, là nhãn đôi sẵn có chứ không phải bị đổi lớp."
+"img_0065","class_or_category_swap","detection=cup; panoptic=vase; bbox_iou=0.87","Dao Quang Tuan","rejected","Vật là lọ gốm nhỏ hình trụ có hoa văn, đứng cạnh bình men xanh trên kệ, không phải cốc uống nước. Detection có cả box vase và box cup trùng nhau, segment vase là đúng."
+"img_0066","instance_merge","panoptic=person; separate_box_coverage=1.49","Dao Quang Tuan","rejected","Người đàn ông ngồi sofa cầm chai bia phía sau, lọt vào box người áo sơ mi xám đang chơi Wii. Anh ấy có segment và box riêng, mỗi người một mask, không gộp."
+"img_0069","instance_merge","panoptic=chair; separate_box_coverage=1.44","Dao Quang Tuan","rejected","Đám cưới trong nhà thờ. Segment này là phần lưng ghế lộ ra giữa mục sư và cô dâu, có box riêng. Do ghế xếp sát nhau nên nó nằm một phần trong box hàng ghế phía sau."
+"img_0069","instance_merge","panoptic=chair; separate_box_coverage=1.79","Dao Quang Tuan","rejected","Lưng ghế ngay sau lưng cô dâu có box riêng, chỉ nằm gọn trong box hàng ghế rộng phía sau. Hai ghế có mask riêng, chỉ là box chồng nhau."
+"img_0069","instance_merge","panoptic=person; separate_box_coverage=1.11","Dao Quang Tuan","rejected","Segment là ông mục sư mặc vest đen cầm sách, đứng chen giữa chú rể và cô dâu nên lấn vào box của cả hai. Chỉ là một người, có box riêng, không gộp."
+"img_0070","instance_merge","panoptic=person; separate_box_coverage=2.00","Dao Quang Tuan","rejected","Người ngồi ở mép phải phía sau thanh niên áo trắng, bị box của thanh niên trùm hết nên điểm cao. Người này có segment và box riêng, không bị gộp."
+"img_0071","instance_merge","panoptic=person; separate_box_coverage=1.47","Dao Quang Tuan","rejected","Người áo xanh dương đứng phía sau bên trái, cạnh người mặc áo khoác đỏ. Hai người tách biệt, mỗi người có mask và box riêng, chỉ là box chồng một phần."
+"img_0075","instance_merge","panoptic=person; separate_box_coverage=1.72","Dao Quang Tuan","rejected","Sân bóng chày: người đứng ở hàng rào phía sau bị box cầu thủ đánh bóng phía trước trùm lên. Hai người ở xa nhau, có segment và box riêng."
+"img_0075","instance_merge","panoptic=person; separate_box_coverage=1.76","Dao Quang Tuan","rejected","Người áo trắng đứng sau lưới bên phải bị box trọng tài đang quỳ phía trước trùm lên. Hai người khác nhau, mỗi người có mask riêng."
+"img_0080","instance_merge","panoptic=person; separate_box_coverage=1.37","Dao Quang Tuan","rejected","Trong xe buýt, người áo trắng đứng phía sau giữa người áo hoa và ông áo sơ mi xanh. Người này có segment và box riêng, chỉ lọt một phần vào box người áo hoa."
+"img_0080","instance_merge","panoptic=person; separate_box_coverage=1.78","Dao Quang Tuan","rejected","Thanh niên áo xanh đeo kính cúi đầu phía sau, bị người áo đen che một phần nên nằm trong box người áo đen. Có segment và box riêng, không gộp."
+"img_0080","instance_merge","panoptic=person; separate_box_coverage=1.98","Dao Quang Tuan","rejected","Khuôn mặt một người ló ra sau vai ông áo sơ mi xanh, nằm trọn trong box của ông nên điểm cao. Hai người, hai segment riêng."
+"img_0080","instance_merge","panoptic=person; separate_box_coverage=2.00","Dao Quang Tuan","rejected","Hai cái đầu người nhỏ ở hậu cảnh, một sau vai anh râu đeo kính, một sau đầu người áo hoa. Mỗi người có box riêng, chỉ là nằm trong box người đứng trước."
+"img_0081","class_swap","detection=bear; panoptic=tennis racket; bbox_iou=0.99","Dao Quang Tuan","confirmed","Vật trong box là cây vợt tennis có logo chữ W, quả bóng vàng ngay trước mặt vợt, nữ VĐV đang đánh thuận tay. Trong ảnh không có con gấu nào. Panoptic ghi vợt tennis là đúng, detection ghi bear là sai."
+"img_0081","missing_box","panoptic=tennis racket; area=11119","Dao Quang Tuan","rejected","Cây vợt tennis đã có box đúng chỗ, chỉ bị ghi nhầm lớp thành bear (đã báo ở dòng class_swap). Box không thiếu, tính thêm missing_box là đếm trùng một lỗi."
+"img_0088","missing_box","panoptic=chair; area=3609","Dao Quang Tuan","confirmed","Hai ghế nhựa trắng đặt cạnh nhau dưới mái hiên, bên trái con ngựa lùn đen. Ghế bên trái có box, ghế bên phải nhìn rõ, không bị che, có segment chair nhưng detection không có box."
+"img_0093","instance_merge","panoptic=person; separate_box_coverage=1.56","Dao Quang Tuan","rejected","Khán giả đứng sau đống rơm, ngay sau lưng tay đua mô tô nên lọt một phần vào box tay đua. Khán giả có segment và box riêng, không bị gộp."
+"img_0093","instance_merge","panoptic=person; separate_box_coverage=2.00","Dao Quang Tuan","rejected","Một khán giả nhỏ ở hậu cảnh nằm gọn trong box lớn của tay đua đội mũ trắng. Người này có box riêng, đám đông bên phải đã được đánh crowd."
+"img_0101","instance_merge","panoptic=zebra; separate_box_coverage=1.40","Dao Quang Tuan","rejected","Con ngựa vằn cúi ăn cỏ ở mép trái, một phần bị box con ngựa vằn phía trước trùm lên. Mỗi con có mask và box riêng, viền mask bám đúng từng con."
+"img_0105","bbox_drift","class=cat; best_same_class_iou=0.15","Dao Quang Tuan","rejected","Box ôm sát con mèo xám nằm ở ngưỡng cửa, box đúng. Segment mèo bị dính thêm một dải pixel lạ ở đáy ảnh, cách xa con mèo, đây là lỗi panoptic (thing_overlap) chứ không phải box lệch."
+"img_0105","missing_box","panoptic=cat; area=9658","Dao Quang Tuan","rejected","Con mèo đã có box đúng chỗ. Segment chỉ không ghép được với box vì bị dính dải pixel lạ ở đáy ảnh (lỗi thing_overlap), detection không thiếu box."
+"img_0110","instance_merge","panoptic=bowl; separate_box_coverage=2.00","Dao Quang Tuan","rejected","Rổ inox đục lỗ đựng nải chuối. Segment nhỏ phía trên là cái quai cong của rổ, cả detection lẫn panoptic đều tách nó thành một bowl riêng. Đây là nhãn gốc, không phải hai vật bị gộp."
+"img_0111","instance_merge","panoptic=boat; separate_box_coverage=1.79","Dao Quang Tuan","rejected","Bãi biển sỏi có hai thuyền gỗ: thuyền lớn phía trước cạnh máy kéo và thuyền nhỏ phía sau. Mỗi thuyền có segment và box riêng, thuyền sau chỉ bị box thuyền trước trùm lên."

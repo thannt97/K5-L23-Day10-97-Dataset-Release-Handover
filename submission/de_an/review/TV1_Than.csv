@@ -1,21 +1,21 @@
 ﻿image,type,detail,reviewer,verdict,note
-img_0017,class_or_category_swap,detection=remote; panoptic=cell phone; bbox_iou=0.86,Nguyen Thanh Than,,
-img_0020,bbox_drift,class=bird; best_same_class_iou=0.11,Nguyen Thanh Than,,
-img_0026,instance_merge,panoptic=motorcycle; separate_box_coverage=1.97,Nguyen Thanh Than,,
-img_0028,instance_merge,panoptic=boat; separate_box_coverage=1.53,Nguyen Thanh Than,,
-img_0033,instance_merge,panoptic=bottle; separate_box_coverage=1.44,Nguyen Thanh Than,,
-img_0036,instance_merge,panoptic=sink; separate_box_coverage=1.66,Nguyen Thanh Than,,
-img_0040,instance_merge,panoptic=sheep; separate_box_coverage=1.37,Nguyen Thanh Than,,
-img_0040,instance_merge,panoptic=sheep; separate_box_coverage=1.72,Nguyen Thanh Than,,
-img_0045,instance_merge,panoptic=person; separate_box_coverage=2.00,Nguyen Thanh Than,,
-img_0046,class_or_category_swap,detection=truck; panoptic=car; bbox_iou=0.93,Nguyen Thanh Than,,
-img_0049,instance_merge,panoptic=person; separate_box_coverage=2.00,Nguyen Thanh Than,,
-img_0050,bbox_drift,class=traffic light; best_same_class_iou=0.42,Nguyen Thanh Than,,
-img_0050,instance_merge,panoptic=car; separate_box_coverage=1.40,Nguyen Thanh Than,,
-img_0050,instance_merge,panoptic=car; separate_box_coverage=1.43,Nguyen Thanh Than,,
-img_0051,instance_merge,panoptic=chair; separate_box_coverage=1.11,Nguyen Thanh Than,,
-img_0053,instance_merge,panoptic=banana; separate_box_coverage=1.46,Nguyen Thanh Than,,
-img_0054,instance_merge,panoptic=chair; separate_box_coverage=1.59,Nguyen Thanh Than,,
-img_0054,instance_merge,panoptic=person; separate_box_coverage=1.99,Nguyen Thanh Than,,
-img_0055,instance_merge,panoptic=person; separate_box_coverage=2.00,Nguyen Thanh Than,,
-img_0055,missing_box,panoptic=person; area=2718,Nguyen Thanh Than,,
+"img_0017","class_swap","detection=remote; panoptic=cell phone; bbox_iou=0.86","Nguyen Thanh Than","confirmed","Thấy một chiếc điện thoại cảm ứng khá rõ trong ảnh"
+"img_0020","bbox_drift","class=bird; best_same_class_iou=0.11","Nguyen Thanh Than","rejected","xuất hiện 2 con chim, phần box đỏ chỉ lệch nhẹ ở viền box xanh"
+"img_0026","instance_merge","panoptic=motorcycle; separate_box_coverage=1.97","Nguyen Thanh Than","rejected","mặc dù xe phía trước lỗi không tô phủ hết, nhung không liên quan đến lỗi instance_merge"
+"img_0028","instance_merge","panoptic=boat; separate_box_coverage=1.53","Nguyen Thanh Than","rejected","cùng 1 chiếc thuyền nhưng bị đánh thành 2 instance, nhưng đây không phải lỗi instance_merge"
+"img_0033","instance_merge","panoptic=bottle; separate_box_coverage=1.44","Nguyen Thanh Than","rejected","có 6 cái chay được gán nhãn tách biệt, không có lỗi"
+"img_0036","instance_merge","panoptic=sink; separate_box_coverage=1.66","Nguyen Thanh Than","rejected","bồn rửa tay được gán khá rõ, không có lỗi"
+"img_0040","instance_merge","panoptic=sheep; separate_box_coverage=1.37","Nguyen Thanh Than","rejected","có 4 con cừu đã được tách ra thành 4 instance riêng biệt"
+"img_0040","instance_merge","panoptic=sheep; separate_box_coverage=1.72","Nguyen Thanh Than","rejected","có 4 con cừu đã được tách ra thành 4 instance riêng biệt"
+"img_0045","instance_merge","panoptic=person; separate_box_coverage=2.00","Nguyen Thanh Than","rejected","13 người được gán nhãn tách biệt, không có lỗi"
+"img_0046","class_or_category_swap","detection=truck; panoptic=car; bbox_iou=0.93","Nguyen Thanh Than","rejected","có 5 chiếc xe được gán nhãn chính xác"
+"img_0049","instance_merge","panoptic=person; separate_box_coverage=2.00","Nguyen Thanh Than","rejected","có 6 người trong ảnh được gán nhãn, không xuất hiện box nào trùng"
+"img_0050","bbox_drift","class=traffic light; best_same_class_iou=0.42","Nguyen Thanh Than","rejected","4 cụm đèn giao thông được gán nhãn chính xác, box đỏ không bị lệch khỏi box xanh"
+"img_0050","instance_merge","panoptic=car; separate_box_coverage=1.40","Nguyen Thanh Than","confirmed","cụm xe ở phía xa, khá nhiều xe bị gộp thành 1 instance"
+"img_0050","instance_merge","panoptic=car; separate_box_coverage=1.43","Nguyen Thanh Than","confirmed","cụm xe ở phía xa, khá nhiều xe bị gộp thành 1 instance"
+"img_0051","instance_merge","panoptic=chair; separate_box_coverage=1.11","Nguyen Thanh Than","rejected","suất hiện 4 chiếc ghế được gán đúng"
+"img_0053","instance_merge","panoptic=banana; separate_box_coverage=1.46","Nguyen Thanh Than","confirmed","có 5 miếng chuối, xuất hiện 2 miếng bị gán trùng vào 1 đối tượng"
+"img_0054","instance_merge","panoptic=chair; separate_box_coverage=1.59","Nguyen Thanh Than","rejected","8 chiếc ghế đã được gán nhãn, không trùng đối tượng nào"
+"img_0054","instance_merge","panoptic=person; separate_box_coverage=1.99","Nguyen Thanh Than","rejected","có 12 người đã được gán nhãn chính xác, không có lỗi"
+"img_0055","instance_merge","panoptic=person; separate_box_coverage=2.00","Nguyen Thanh Than","rejected","có 4 người trong ảnh có segment riêng, không có hai người bị gộp"
+"img_0055","missing_box","panoptic=person; area=2718","Nguyen Thanh Than","confirmed","có 1 người được gán vùng xanh nhưng không phát hiện box đỏ nào"
