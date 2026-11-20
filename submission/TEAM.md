@@ -1,7 +1,7 @@
 # Nhóm 1204
 
 - Seed luyện tập: 3007
-- Repo: https://github.com/thannt97/K5-L23-Day10-2A202603202-Dataset-Release-Handover
+- Repo: https://github.com/thannt97/K5-L23-Day10-97-Dataset-Release-Handover
 
 | Họ và tên | MSHV | Tài khoản GitHub | Phần chính |
 |---|---|---|---|
